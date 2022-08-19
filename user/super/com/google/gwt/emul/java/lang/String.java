@@ -386,7 +386,7 @@ public final class String implements Comparable<String>, CharSequence,
   }
 
   public String concat(String str) {
-    return checkNotNull(this) + checkNotNull(str);
+    return (this) + (str);
   }
 
   public boolean contains(CharSequence s) {
@@ -413,11 +413,10 @@ public final class String implements Comparable<String>, CharSequence,
   public boolean equals(Object other) {
     // Java equality is translated into triple equality which is a quick to compare strings for
     // equality without any instanceOf checks.
-    return checkNotNull(this) == other;
+    return (this) == other;
   }
 
   public boolean equalsIgnoreCase(String other) {
-    checkNotNull(this);
     if (other == null) {
       return false;
     }

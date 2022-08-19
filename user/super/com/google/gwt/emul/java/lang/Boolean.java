@@ -99,7 +99,7 @@ public final class Boolean implements Comparable<Boolean>, Serializable {
 
   @Override
   public boolean equals(Object o) {
-    return checkNotNull(this) == o;
+    return (this) == o;
   }
 
   @Override

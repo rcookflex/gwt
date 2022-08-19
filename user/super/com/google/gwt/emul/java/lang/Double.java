@@ -156,7 +156,7 @@ public final class Double extends Number implements Comparable<Double> {
 
   @Override
   public boolean equals(Object o) {
-    return checkNotNull(this) == o;
+    return (this) == o;
   }
 
   @Override
